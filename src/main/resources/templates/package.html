@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h4>Add New Package</h4>
+	<form th:action="@{/package}" th:object="${packageNew}" method="post">
+	<label>Package Name</label>
+	<input type="text" name="name" placeholder="packagename" ></br>
+	<label>Priority</label>
+	<input type="text" name="priority" placeholder="packagepriority" ></br>
+	<label>Amount</label>
+	<input type="text" name="amount" placeholder="amount" ></br>
+	<lable>Enabled</lable>
+	<input type="text" name="enabled" placeholder="enabled" ></br>
+	<lable>Description</lable></br>
+	<input type ="text" name = "description" ></br>
+	<input type="submit"></br><br>
+	</form><br>
+</body>
+</html>

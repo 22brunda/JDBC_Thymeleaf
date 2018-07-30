@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>User Login Page</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h2>User SignIn</h2> <p th:text="${errors}" />
+        <form th:action="@{/signin}" th:object="${signIn}" method="post">
+        	<label th:style="${usernameErrorColor}" for="username">Username</label>
+        	<input type="text" id="username" name="email"/>
+        	<label th:style="${passwordErrorColor}" for="password">Password</label>
+        	<input type="password" id="password" name="password"/>
+        	</br>
+        	<input type="submit" th:class="${btn}" value="Sign In"/>
+        	
+        </form>
+    </body>
+</html>

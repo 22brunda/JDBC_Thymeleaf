@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>New Channel Updated</h1>
+    <p th:text="'Channel Name: ' + ${channelNew.name}" />
+    <p th:text="'Priority: ' + ${channelNew.priority}" />
+    <p th:text="'Active: ' + ${channelNew.active}" />
+    <p th:text="'Title: ' + ${channelNew.title}" />
+    <p th:text="'Description: ' + ${channelNew.description}" />
+    <a href= "/channel"> Back To Home </a>
+</body>
+</html> 

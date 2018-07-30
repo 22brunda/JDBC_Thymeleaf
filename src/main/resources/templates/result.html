@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>User SignUp Successfully</h1>
+    <p th:text="'Email: ' + ${signUp.email}" />
+    <p th:text="'Password: ' + ${signUp.password}" />
+    <p th:text="'Phone: ' + ${signUp.phoneNumber}" />
+    <p th:text="'Name: ' + ${signUp.name}" />
+    <p th:text="'Annual Income: ' + ${signUp.annualIncome}" />
+    <p th:text="'DOB: ' + ${signUp.dateOfBirth}" />
+    <a href= "/signup"> Submit another signUp Form </a>
+</body>
+</html>     

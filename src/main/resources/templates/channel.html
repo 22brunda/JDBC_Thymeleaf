@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h4>Add New Channel</h4>
+	<form th:action="@{/channel}" th:object="${channelNew}" method="post">
+	<label>Channel Name</label>
+	<input type="text" name="name" placeholder="channelname" ></br>
+	<label>Priority</label>
+	<input type="text" name="priority" placeholder="channelpriority" ></br>
+	<label>Title</label>
+	<input type="text" name="title" placeholder="channeltitle" ></br>
+	<lable>Active</lable>
+	<input type="text" name="active" placeholder="active" ></br>
+	<lable>Description</lable></br>
+	<input type ="text" name = "description" ></br>
+	<input type="submit"></br><br>
+	</form><br>
+</body>
+</html>
